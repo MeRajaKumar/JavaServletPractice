@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <h2>Enter Two Numbers</h2>
+    <form action="NewServlet1" method="post">  <!-- Ensure action matches servlet name -->
+        <label for="firstnum">First Number:</label>  
+        <input type="number" name="firstnum" id="firstnum" required>  <!-- Added 'number' type & 'required' -->
+        <br><br>
+
+        <label for="secondnum">Second Number:</label>  
+        <input type="number" name="secondnum" id="secondnum" required>
+        <br><br>
+
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
