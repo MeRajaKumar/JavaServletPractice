@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body>
+    <h2>Library Management System</h2>
+
+    <form action="LibraryServlet" method="post">
+        <label>Student UID:</label>
+        <input type="text" name="studentUid" required><br><br>
+
+        <label>Student Name:</label>
+        <input type="text" name="studentName" required><br><br>
+
+        <label>Book Number:</label>
+        <input type="text" name="bookNumber" required><br><br>
+
+        <label>Book Name:</label>
+        <input type="text" name="bookName" required><br><br>
+
+        <label>Date of Issue:</label>
+        <input type="date" name="issueDate" required><br><br>
+
+        <input type="submit" name="action" value="Add Book">
+        <input type="submit" name="action" value="Update Book">
+    </form>
+
+    <br>
+    <a href="LibraryServlet?action=view">View Issued Books</a>
+</body>
+</html>
